@@ -16,6 +16,9 @@ int main(){
     }
     gettimeofday(&ending_time, NULL);
     printf("Average time difference in micro seconds: %f\n", (float) (ending_time.tv_sec * 1000000 + ending_time.tv_usec - starting_time.tv_sec * 1000000 - starting_time.tv_usec) / nloops);
+
+
+
     printf("Experiment 2: measure the cost of a system call.\n");
     struct timeval starting_time2;
     struct timeval ending_time2;
